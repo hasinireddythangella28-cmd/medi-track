@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTrack - Smart Medicine Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">💊 MediTrack</div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#medicines">My Medicines</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#health-tips">Health Tips</a>
+        </nav>
+
+        <div class="profile">👤 My Profile</div>
+    </header>
+
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome" id="dashboard">
+            <div>
+                <p class="welcome-tag">YOUR PERSONAL HEALTH COMPANION</p>
+                <h1>Take Control of Your Health!</h1>
+                <p>
+                    Manage your medicines, track your daily doses
+                    and never miss an important reminder.
+                </p>
+                <a href="#add-medicine" class="btn">+ Add Medicine</a>
+            </div>
+
+            <div class="welcome-icon">🩺</div>
+        </section>
+
+        <!-- Dashboard Statistics -->
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-icon blue">💊</div>
+                <div>
+                    <p>Total Medicines</p>
+                    <h2>04</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">✅</div>
+                <div>
+                    <p>Completed Today</p>
+                    <h2>02</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">⏰</div>
+                <div>
+                    <p>Upcoming Doses</p>
+                    <h2>02</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">📅</div>
+                <div>
+                    <p>Daily Progress</p>
+                    <h2>50%</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medicine Schedule -->
+        <section class="content-section" id="schedule">
+            <div class="section-heading">
+                <div>
+                    <p class="small-heading">MEDICINE MANAGEMENT</p>
+                    <h2>Today's Medicine Schedule</h2>
+                </div>
+                <span class="date-label">Daily Overview</span>
+            </div>
+
+            <div class="medicine-list">
+
+                <article class="medicine-card">
+                    <div class="medicine-icon">💊</div>
+                    <div class="medicine-info">
+                        <h3>Paracetamol</h3>
+                        <p>500 mg · After Breakfast</p>
+                        <span class="time">🕘 9:00 AM</span>
+                    </div>
+                    <span class="status taken">Taken ✓</span>
+                </article>
+
+                <article class="medicine-card">
+                    <div class="medicine-icon">💉</div>
+                    <div class="medicine-info">
+                        <h3>Vitamin D</h3>
+                        <p>1000 IU · After Lunch</p>
+                        <span class="time">🕐 1:00 PM</span>
+                    </div>
+                    <span class="status pending">Pending</span>
+                </article>
+
+                <article class="medicine-card">
+                    <div class="medicine-icon">💊</div>
+                    <div class="medicine-info">
+                        <h3>Vitamin C</h3>
+                        <p>500 mg · After Dinner</p>
+                        <span class="time">🕗 8:00 PM</span>
+                    </div>
+                    <span class="status upcoming">Upcoming</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- My Medicines -->
+        <section class="content-section" id="medicines">
+            <div class="section-heading">
+                <div>
+                    <p class="small-heading">YOUR MEDICATIONS</p>
+                    <h2>My Medicines</h2>
+                </div>
+            </div>
+
+            <div class="medicine-grid">
+                <div class="medicine-box">
+                    <span>💊</span>
+                    <h3>Paracetamol</h3>
+                    <p>500 mg</p>
+                    <small>Once a day</small>
+                </div>
+
+                <div class="medicine-box">
+                    <span>🟡</span>
+                    <h3>Vitamin D</h3>
+                    <p>1000 IU</p>
+                    <small>Once a day</small>
+                </div>
+
+                <div class="medicine-box">
+                    <span>💊</span>
+                    <h3>Vitamin C</h3>
+                    <p>500 mg</p>
+                    <small>Once a day</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Medicine Form -->
+        <section class="content-section add-section" id="add-medicine">
+            <p class="small-heading">MEDICINE MANAGEMENT</p>
+            <h2>Add a New Medicine</h2>
+
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="medicine">Medicine Name</label>
+                        <input type="text" id="medicine"
+                            placeholder="Enter medicine name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dosage">Dosage</label>
+                        <input type="text" id="dosage"
+                            placeholder="Example: 500 mg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Reminder Time</label>
+                        <input type="time" id="time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frequency">Frequency</label>
+                        <select id="frequency">
+                            <option>Once a day</option>
+                            <option>Twice a day</option>
+                            <option>Three times a day</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="btn">
+                    + Save Medicine
+                </button>
+            </form>
+        </section>
+
+        <!-- Health Tips -->
+        <section class="health-tips" id="health-tips">
+            <div class="tip-icon">❤️</div>
+            <div>
+                <p class="small-heading">DAILY HEALTH TIP</p>
+                <h2>Your Health Matters!</h2>
+                <p>
+                    Follow the medicine schedule prescribed by your
+                    healthcare professional. Stay hydrated and
+                    maintain a healthy daily routine.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>💊 MediTrack</h3>
+        <p>Smart Medicine Reminder & Tracker</p>
+        <p>© 2026 MediTrack. All Rights Reserved.</p>
+        <small>
+            Demo interface only. Follow your healthcare professional's
+            instructions for medication.
+        </small>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,475 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fc;
+    color: #25364a;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    color: #087bc1;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #435469;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #087bc1;
+}
+
+.profile {
+    background: #eaf5fc;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #087bc1;
+}
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px;
+    margin: 40px 0;
+    border-radius: 18px;
+    background: linear-gradient(120deg, #d9f1ff, #f0faff);
+}
+
+.welcome-tag,
+.small-heading {
+    color: #0784c7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.welcome h1 {
+    color: #153c5a;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    color: #5c7183;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.welcome-icon {
+    font-size: 105px;
+    background: white;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    border: none;
+    background: #0784c7;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #05699f;
+    transform: translateY(-2px);
+}
+
+/* Statistics Cards */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+.stat-card p {
+    color: #778798;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.stat-card h2 {
+    color: #183c59;
+    font-size: 27px;
+}
+
+.stat-icon {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.blue {
+    background: #e1f3ff;
+}
+
+.green {
+    background: #e2f8ec;
+}
+
+.orange {
+    background: #fff0dc;
+}
+
+.purple {
+    background: #f0eaff;
+}
+
+/* Content Sections */
+.content-section {
+    margin-bottom: 45px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-heading h2,
+.add-section h2 {
+    font-size: 25px;
+    color: #183c59;
+}
+
+.date-label {
+    background: #e5f4fd;
+    color: #087bc1;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+/* Medicine Schedule */
+.medicine-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.medicine-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+.medicine-icon {
+    font-size: 30px;
+    background: #eaf5fc;
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medicine-info {
+    flex: 1;
+}
+
+.medicine-info h3 {
+    color: #193e5b;
+    margin-bottom: 6px;
+}
+
+.medicine-info p,
+.time {
+    font-size: 13px;
+    color: #81909f;
+}
+
+.time {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.status {
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.taken {
+    background: #e1f7e9;
+    color: #23944c;
+}
+
+.pending {
+    background: #fff0dc;
+    color: #cf8118;
+}
+
+.upcoming {
+    background: #e7f2ff;
+    color: #2475bc;
+}
+
+/* My Medicines */
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.medicine-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+
+.medicine-box:hover {
+    transform: translateY(-5px);
+}
+
+.medicine-box span {
+    font-size: 32px;
+}
+
+.medicine-box h3 {
+    color: #193e5b;
+    margin: 15px 0 8px;
+}
+
+.medicine-box p {
+    color: #0784c7;
+    margin-bottom: 8px;
+}
+
+.medicine-box small {
+    color: #8594a2;
+}
+
+/* Add Medicine Form */
+.add-section {
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+.add-section h2 {
+    margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #42566b;
+}
+
+.form-group input,
+.form-group select {
+    padding: 13px;
+    border: 1px solid #dce5ed;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: #fbfdff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #0784c7;
+}
+
+/* Health Tips */
+.health-tips {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #e5f5ff;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 50px;
+}
+
+.tip-icon {
+    font-size: 48px;
+}
+
+.health-tips h2 {
+    color: #183c59;
+    margin-bottom: 10px;
+}
+
+.health-tips p {
+    color: #5c7183;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: #153c59;
+    color: white;
+    line-height: 2;
+}
+
+footer h3 {
+    font-size: 23px;
+}
+
+footer p {
+    color: #d4e8f6;
+}
+
+footer small {
+    color: #b9d3e5;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .welcome h1 {
+        font-size: 29px;
+    }
+
+    .welcome-icon {
+        width: 120px;
+        height: 120px;
+        font-size: 75px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .medicine-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .medicine-card {
+        flex-wrap: wrap;
+    }
+
+    .section-heading {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .health-tips {
+        flex-direction: column;
+        text-align: center;
+    }
+}
